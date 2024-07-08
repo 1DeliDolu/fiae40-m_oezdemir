@@ -1,0 +1,11 @@
+// Setup
+let myArray = [["John", 23], ["cat", 2]];
+let removedFromMyArray = myArray.shift(); // removes ["John", 23] from myArray
+
+myArray = [["dog", 3]]; // reset myArray to [["dog", 3]]
+
+console.log(removedFromMyArray); // Output: ["John", 23]
+console.log(myArray); // Output: [["dog", 3]]
+
+
+// Only change code below this line
