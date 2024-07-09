@@ -6,7 +6,7 @@
 
 ## Legacy Certification
 
-# am 09.07.2024 bis iterate-with-javascript-while-loops erledigt. 
+# am 09.07.2024 Java Basic erfolgreich abgeschloßen. 
 
 [Legacy JavaScript Algorithms and Data Structures](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/)
 
