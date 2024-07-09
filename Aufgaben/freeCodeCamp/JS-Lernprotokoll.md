@@ -6,6 +6,8 @@
 
 ## Legacy Certification
 
+# am 09.07.2024 bis iterate-with-javascript-while-loops erledigt. 
+
 [Legacy JavaScript Algorithms and Data Structures](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/)
 
 ## Beta Certification
