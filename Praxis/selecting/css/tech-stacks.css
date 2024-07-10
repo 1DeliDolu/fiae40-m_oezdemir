@@ -10,10 +10,7 @@ body {
 table {
   border-collapse: collapse;
   min-width: 90vw;
-}
-
-col {
-  width: 20vw;
+  background-color: pink;
 }
 
 col:first-child {
@@ -61,9 +58,14 @@ table tbody tr:nth-of-type(3) > th::before {
 /* Emoji 👿 nach .NET Stack */
 table tbody tr:nth-of-type(5) > th::after {
   content: " 👿";
-
+}
 /* 
   Testen Sie in der JavaScript Konsole, ob Ihre Selektorn die gewünschten Elemente auswählen
   document.querySelector()
   document.querySelectorAll()
 */
+
+.markiert {
+  color :crimson;
+  font-weight: bold
+}

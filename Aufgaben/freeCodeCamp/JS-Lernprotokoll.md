@@ -6,7 +6,7 @@
 
 ## Legacy Certification
 
-# am 09.07.2024 Java Basic erfolgreich abgeschloßen. 
+# "Lernprotokoll 10.07.24" 
 
 [Legacy JavaScript Algorithms and Data Structures](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/)
 
