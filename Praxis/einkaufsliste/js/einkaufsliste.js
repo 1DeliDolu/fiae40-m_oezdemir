@@ -82,9 +82,9 @@
                //alert('Kein Element markiert.');
                return;
            }
-           selectedItems.forEach(item => {
-               item.removeEventListener('click', selectItem);
-               EINKAUFLISTE.removeChild(item);
+           selectedItems.forEach(mItem => {
+               mItem.removeEventListener('click', selectItem);
+               EINKAUFLISTE.removeChild(mItem);
            });
         //mItem.remove();
         //mItem.parentNode.removeChild(mItem);
@@ -95,16 +95,12 @@
         const selectedItems = Array.from(EINKAUFLISTE.querySelectorAll('li.markiert'));
         if (selectedItems.length === 0) return;
     
-        // Move all selected items to the top
-        selectedItems.forEach(item => {
-            EINKAUFLISTE.insertBefore(item, EINKAUFLISTE.firstElementChild);
-        });
-    
-        // Now move them up one by one
-        selectedItems.forEach(item => {
-            const prev = item.previousElementSibling;
-            if (prev) {
-                EINKAUFLISTE.insertBefore(item, prev);
+            selectedItems.forEach(mItem => {
+            const vorItem = mItem.previousElementSibling;
+            if (vorItem) {
+                EINKAUFLISTE.insertBefore(mItem, vorItem);
+            } else {
+                EINKAUFLISTE.appendChild(mItem);
             }
         });
     };
@@ -114,20 +110,17 @@
         const selectedItems = Array.from(EINKAUFLISTE.querySelectorAll('li.markiert'));
         if (selectedItems.length === 0) return;
     
-        // Move all selected items to the bottom
-        selectedItems.forEach(item => {
-            EINKAUFLISTE.appendChild(item);
-        });
-    
-        // Now move them down one by one in reverse order
-        selectedItems.reverse().forEach(item => {
-            const next = item.nextElementSibling;
-            if (next) {
-                EINKAUFLISTE.insertBefore(next, item);
+        
+        selectedItems.reverse().forEach(mItem => {
+            const nacstItem = mItem.nextElementSibling;
+            if (nacstItem) {
+                EINKAUFLISTE.insertBefore(nacstItem, mItem);
+            } else {
+                
+                EINKAUFLISTE.insertBefore(mItem, EINKAUFLISTE.firstElementChild);
             }
         });
     };
-    
     
 
     const speicherListe = () => {
